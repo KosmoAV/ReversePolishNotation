@@ -8,66 +8,66 @@ class ReversePolishNotationCalculatorTest {
 
     @Test
     void shouldReturn5ThenSummarize2And3() {
-        // Готовим данные
+        // Р“РѕС‚РѕРІРёРј РґР°РЅРЅС‹Рµ
         String reversPolishNotation = "2 3 +";
         int expected = 5;
 
-        // Запускаем код
+        // Р—Р°РїСѓСЃРєР°РµРј РєРѕРґ
         int actual = calculator.calculatePolishNotation(reversPolishNotation);
 
-        // Сравниваем ожидаемое значение с результатом
+        // РЎСЂР°РІРЅРёРІР°РµРј РѕР¶РёРґР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃ СЂРµР·СѓР»СЊС‚Р°С‚РѕРј
         assertEquals(expected, actual);
     }
 
     @Test
     void shouldReturn3ThenSubtract2From5() {
-        // Готовим данные
+        // Р“РѕС‚РѕРІРёРј РґР°РЅРЅС‹Рµ
         String reversPolishNotation = "5 2 -";
         int expected = 3;
 
-        // Запускаем код
+        // Р—Р°РїСѓСЃРєР°РµРј РєРѕРґ
         int actual = calculator.calculatePolishNotation(reversPolishNotation);
 
-        // Сравниваем ожидаемое значение с результатом
+        // РЎСЂР°РІРЅРёРІР°РµРј РѕР¶РёРґР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃ СЂРµР·СѓР»СЊС‚Р°С‚РѕРј
         assertEquals(expected, actual);
     }
 
     @Test
     void shouldReturn6ThenMultiply2And3() {
-        // Готовим данные
+        // Р“РѕС‚РѕРІРёРј РґР°РЅРЅС‹Рµ
         String reversPolishNotation = "2 3 *";
         int expected = 6;
 
-        // Запускаем код
+        // Р—Р°РїСѓСЃРєР°РµРј РєРѕРґ
         int actual = calculator.calculatePolishNotation(reversPolishNotation);
 
-        // Сравниваем ожидаемое значение с результатом
+        // РЎСЂР°РІРЅРёРІР°РµРј РѕР¶РёРґР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃ СЂРµР·СѓР»СЊС‚Р°С‚РѕРј
         assertEquals(expected, actual);
     }
 
     @Test
     void shouldWorkWithWhitespaces() {
-        // Готовим данные
+        // Р“РѕС‚РѕРІРёРј РґР°РЅРЅС‹Рµ
         String reversPolishNotation = "  23      13           -      ";
         int expected = 10;
 
-        // Запускаем код
+        // Р—Р°РїСѓСЃРєР°РµРј РєРѕРґ
         int actual = calculator.calculatePolishNotation(reversPolishNotation);
 
-        // Сравниваем ожидаемое значение с результатом
+        // РЎСЂР°РІРЅРёРІР°РµРј РѕР¶РёРґР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃ СЂРµР·СѓР»СЊС‚Р°С‚РѕРј
         assertEquals(expected, actual);
     }
 
     @Test
     void shouldWorkWithNegativeNumber() {
-        // Готовим данные
+        // Р“РѕС‚РѕРІРёРј РґР°РЅРЅС‹Рµ
         String reversPolishNotation = "-2 -2 -";
         int expected = 0;
 
-        // Запускаем код
+        // Р—Р°РїСѓСЃРєР°РµРј РєРѕРґ
         int actual = calculator.calculatePolishNotation(reversPolishNotation);
 
-        // Сравниваем ожидаемое значение с результатом
+        // РЎСЂР°РІРЅРёРІР°РµРј РѕР¶РёРґР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃ СЂРµР·СѓР»СЊС‚Р°С‚РѕРј
         assertEquals(expected, actual);
     }
 }

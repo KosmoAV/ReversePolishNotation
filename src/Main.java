@@ -4,7 +4,7 @@ public class Main {
 
         ReversePolishNotationCalculator calculator = new ReversePolishNotationCalculator();
         String reversPolishNotation = "8 3 5 + -";
-        System.out.printf("Результат расчетов по строке '%s' равен %d",
+        System.out.printf("Р РµР·СѓР»СЊС‚Р°С‚ СЂР°СЃС‡РµС‚РѕРІ РїРѕ СЃС‚СЂРѕРєРµ '%s' СЂР°РІРµРЅ %d",
                 reversPolishNotation,
                 calculator.calculatePolishNotation(reversPolishNotation)
         );
